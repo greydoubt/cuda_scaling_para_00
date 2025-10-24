@@ -1,0 +1,10 @@
+* All your work should be within the `main` function
+* Store the number of GPUs available in a variable for later use
+* Using the number of entries and the number of GPUs, define a chunk size for each GPU's work. Remember to use the round-up division helper function `sdiv` for the reasons discussed in a previous section
+* Create an array that contains pointers for the memory that will be allocated on each GPU
+* Allocate a chunk's worth of data for each GPU
+* Copy the correct chunk of data to each GPU
+* For each GPU, decrypt its chunk of data
+* Copy each GPU's chunk of data back to the host
+* `make clean` will delete all binaries and report files, if needed
+* You can edit the [*Makefile*](mgpu_cipher/Makefile) as you wish, for example, to change the name of generated binaries or report files. You can of course also enter the commands found in the *Makefile* directly into the terminal
